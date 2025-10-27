@@ -1,0 +1,117 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║   VISUALIZADOR DE CONVERSIONES MARKER                                    ║
+║   Herramientas para revisar digitalizaciones PDF → Markdown              ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📖 DOCUMENTACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. INDICE.md
+   → Índice general con toda la información del proyecto
+
+2. README_VISUALIZADOR.md
+   → Referencia rápida (inicio rápido, comandos básicos)
+
+3. TUTORIAL_VISUALIZADOR_MARKER.md
+   → Tutorial completo con ejemplos y solución de problemas
+
+4. TUTORIAL_CONVERTIR_PDF.md
+   → Guía para convertir PDFs con Marker
+
+🛠️ HERRAMIENTAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• generador_visualizacion_marker.py
+  → Script principal para generar visualizaciones HTML
+
+• procesar_lote.sh
+  → Script para procesar múltiples PDFs automáticamente
+
+🚀 INICIO RÁPIDO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Instalar dependencia:
+   pip install PyMuPDF
+
+2. Generar visualización:
+   python3 generador_visualizacion_marker.py documento.pdf documento/ salida.html
+
+3. Abrir en navegador:
+   open salida.html
+
+📊 PROCESAMIENTO POR LOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+./procesar_lote.sh
+
+Esto procesará automáticamente todos los PDFs que tengan su directorio
+de conversión de Marker y guardará las visualizaciones en visualizaciones/
+
+💡 EJEMPLO COMPLETO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 1. Convertir PDF con Marker
+marker mi_documento.pdf --output_dir .
+
+# 2. Generar visualización
+python3 generador_visualizacion_marker.py \
+  mi_documento.pdf \
+  mi_documento \
+  revision.html
+
+# 3. Abrir en navegador
+open revision.html
+
+📁 ESTRUCTURA ESPERADA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+marker-conversions/
+├── documento.pdf                    ← PDF original
+├── documento/                       ← Salida de Marker
+│   ├── documento.md                 ← Texto extraído
+│   ├── documento_meta.json          ← Metadatos
+│   └── _page_*_*.jpeg              ← Imágenes
+├── visualizacion_documento.html     ← Interfaz HTML generada
+└── pdf_pages/                       ← Renders del PDF
+    └── page_*.png
+
+✨ CARACTERÍSTICAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Vista comparativa PDF original vs texto extraído
+✓ Navegación página por página (← →)
+✓ Galería de imágenes con zoom
+✓ Estadísticas de conversión
+✓ Interfaz ligera (~100KB) que funciona offline
+✓ Compatible con todos los navegadores modernos
+
+🐛 PROBLEMAS COMUNES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Error: ModuleNotFoundError: No module named 'fitz'
+Solución: pip install PyMuPDF
+
+Error: FileNotFoundError
+Solución: Verifica que existan documento.pdf y documento/documento.md
+
+Las imágenes no se ven
+Solución: Abre el HTML desde el mismo directorio donde ejecutaste el script
+
+Ver TUTORIAL_VISUALIZADOR_MARKER.md para más detalles.
+
+🎓 PROYECTO ACADÉMICO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LexiMus: Léxico y ontología de la música en español
+PID2022-139589NB-C33
+
+Universidad de Salamanca | Instituto Complutense de Ciencias Musicales
+Universidad de La Rioja
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Para más información, lee:  INDICE.md
+
+Última actualización: 27 octubre 2025 | Versión 3.0
