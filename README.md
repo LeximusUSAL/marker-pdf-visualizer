@@ -14,7 +14,7 @@ Herramientas para convertir PDFs a Markdown con [Marker](https://github.com/VikP
 
 Este repositorio proporciona:
 
-1. **Tutorial de instalación y uso de Marker** - Guía completa para convertir PDFs a Markdown usando IA
+1. **Tutorial de instalación y uso de Marker** - Guía completa para convertir PDFs a Markdown de forma automática
 2. **Visualizador HTML interactivo** - Herramienta para revisar la calidad de las conversiones
 3. **Scripts de automatización** - Procesamiento por lotes de múltiples documentos
 4. **Documentación exhaustiva** - Tutoriales, ejemplos y solución de problemas
