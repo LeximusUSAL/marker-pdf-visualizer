@@ -361,8 +361,14 @@ Ver más en [docs/TUTORIAL_VISUALIZADOR.md](./docs/TUTORIAL_VISUALIZADOR.md) sec
 
 Este proyecto fue desarrollado como parte de:
 
+**PID ID2025/280 LOS SOPORTES EFÍMEROS EN EL AULA UNIVERSITARIA**
+coordinado por el Dr. Santiago Ruiz Torres- UNIVERSIDAD DE SALAMANCA
+
+**Grupo de transferencia del conocimiento MUSLYME**
+Música, Lenguaje y Medios de Comunicación- UNIVERSIDAD DE SALAMANCA
+
 **LexiMus: Léxico y ontología de la música en español**
-PID2022-139589NB-C33
+PID2022-139589NB-C33 UNIVERSIDAD DE SALAMANCA
 
 Instituciones participantes:
 - Universidad de Salamanca
