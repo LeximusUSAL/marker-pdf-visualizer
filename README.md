@@ -27,6 +27,7 @@ Este repositorio proporciona:
 ✅ Corpus textuales para análisis lingüístico
 ✅ Preservación de patrimonio documental
 
+IMPORTANTE: Para que el visualizador HTML funcione hay que cambiar el script actualizando las rutas de tu ordenador.
 ---
 
 ## 🚀 Inicio Rápido
