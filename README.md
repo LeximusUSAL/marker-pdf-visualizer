@@ -47,7 +47,7 @@ pip install -e .
 
 ```bash
 # Conversión básica
-marker_single documento.pdf salida/
+marker_single documento.pdf --output_dir carpetasalida
 
 # Con opciones avanzadas
 marker_single documento.pdf salida/ \
