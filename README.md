@@ -47,13 +47,8 @@ pip install -e .
 
 ```bash
 # Conversión básica
-marker_single documento.pdf salida/
+marker_single documento.pdf --output_dir carpetasalida
 
-# Con opciones avanzadas
-marker_single documento.pdf salida/ \
-  --langs Spanish \
-  --batch_multiplier 2
-```
 
 ### 3. Generar visualización HTML
 
